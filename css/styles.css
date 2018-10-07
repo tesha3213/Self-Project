@@ -1,8 +1,8 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
@@ -16,13 +16,34 @@ body {
 a {
   text-decoration: none;
   color: #0499ff;
+  font-family: 'Bifocals'
 }
 a:hover {
   color: #6633ff;
 }
 
+h1{
+  padding-top: 30px;
+}
+h2{
+  font-family: BifocalsItalic;
+  padding: 20px
+}
+
+h3{
+  font-family: 'BifocalsBlack';
+}
+
+p {
+  font-family: 'Bifocals'
+}
+
+
 /* Section Styles */
 
+.colorme{
+  color: #ffffff;
+}
 .main-nav {
   width: 100%;
   background: black;
@@ -52,9 +73,36 @@ a:hover {
   color: white
 }
 
+
+.jumbotron {
+    background: url('../images/cover.jpg') top;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+
+.jumbotron .container {
+  padding: 20px;
+}
+
+.self_img{
+	border: 2px solid black;
+	border-radius: 50%;
+	height: 120px;
+	width: 120px;
+}
+
+.gif{
+	border: 4px solid black;
+	border-radius: 50%;
+	height: 120px;
+	width: 120px;
+}
+
+
+
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -80,7 +128,7 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
   background-color: #222;
   color: yellow;
@@ -166,13 +214,35 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: flex;
       max-width: 1200px;
       justify-content: space-around;
       margin: 0 auto;
   }
+
+  @font-face {
+font-family: "BifocalsBlackItalic";
+src: url("font/Bifocals/Bifocals Black Italic.otf") format("opentype");
+}
+
+@font-face {
+font-family: "BifocalsBlack";
+src:url("fonts/Bifocals/Bifocals Black.otf") format("opentype");
+}
+
+@font-face {
+font-family: "Bifocals";
+src:url("fonts/Bifocals/Bifocals.otf") format("opentype");
+}
+@font-face {
+font-family: "BifocalsItalic";
+src:url("fonts/Bifocals/Bifocals Italic.otf") format("opentype");
+font-style: italic;
+}
+
+
 
   header {
     min-height: 450px;
@@ -203,4 +273,3 @@ a.social:hover {
   }
 
 }
-

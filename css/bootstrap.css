@@ -3949,6 +3949,10 @@ tbody.collapse.show {
   padding: 0.5rem 1rem;
 }
 
+.navbar-inverse .navbar-brand {
+    color: #ffffff;
+}
+
 .navbar > .container,
 .navbar > .container-fluid {
   display: -webkit-box;
@@ -4932,13 +4936,15 @@ tbody.collapse.show {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
   border-radius: 0.3rem;
 }
 
+
+
 @media (min-width: 576px) {
   .jumbotron {
-    padding: 4rem 2rem;
+    padding-top:20px;
+    padding-bottom:20px;
   }
 }
 
