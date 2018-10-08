@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -14,6 +14,7 @@
   </head>
   <body>
     <!--navbar-->
+    <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
           <div class="container">
           <a class="navbar-brand order-1 mr-0 text-white">Hoang Trung Portfolio</a>
@@ -42,6 +43,7 @@
       </div>
       </div>
   </nav>
+</div>
     <!--end_navbar-->
 
     <!--jumbotron-->
@@ -54,9 +56,8 @@
       </div>
     <!--endjumbotron-->
 
-<h2 class="display-3 text-center">Profile</h1>
-<!--contain-->
-
+    <h2 class="display-3 text-center">Profile</h1>
+    <!--contain-->
       <div class="container pt-4">
         <div class="row">
           <div class="col">
@@ -87,35 +88,34 @@
       </div>
 <!--/contain-->
 
-<h2 class="display-3 text-center">Education</h2>
-<!--contain-->
-    <div class="container pt-4">
-      <div class="container pt-4">
-        <div class="row">
-          <div class="col-sm-6">
-            <h3>VNUK Institute Danang City</h3>
-            <p class="edu-inf">Computer Science & Engineering</p>
-            <p>2015-2018</p>
-          </div>
-          <div class="col-sm-6">
-            <h3 class="text-center mb-3">Bournemouth University</h3>
-            <p class="edu-inf">BSc Software Engieering</p>
-            <p>Currently (Final Year) </p>
+  <h2 class="display-3 text-center">Education</h2>
+  <!--contain-->
+        <div class="container pt-4">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3>VNUK Institute Danang City</h3>
+              <p class="edu-inf">Computer Science & Engineering</p>
+              <p>2015-2018</p>
+            </div>
+            <div class="col-sm-6">
+              <h3 class="text-center mb-3">Bournemouth University</h3>
+              <p class="edu-inf">BSc Software Engieering</p>
+              <p>Currently (Final Year) </p>
+            </div>
           </div>
         </div>
+  <!--/contain-->
+
+  <h2 class="display-3 text-center">Let's have a lil fun</h2>
+  <!--contain-->
+      <div class="container pt-4">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MtN1YnoL46Q" allowfullscreen></iframe>
+        </div>
       </div>
-    </div>
-<!--/contain-->
+  <!--/contain-->
 
-<h2 class="display-3 text-center">Let's have a lil fun</h2>
-<!--contain-->
-    <div class="container pt-4">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/MtN1YnoL46Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-<!--/contain-->
-
-
-      <div class="container text-center p-5">
+      <div class="container text-center p-4">
           <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modalCenter">Dont miss out! Contact me! Or see my social below.</button>
       </div>
 
@@ -130,18 +130,24 @@
         </button>
       </div>
       <div class="modal-body">
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-default">What can I call you?</span>
+        <form>
+          <div class="form-group">
+            <label class="form-control-label" for="name">Name</label>
+            <input type="text" class="form-control" id="name">
           </div>
-          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-        </div>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-default">Your message:</span>
+          <div class="form-group">
+            <label class="form-control-label" for="email">Email address</label>
+            <input type="email" class="form-control" id="email">
           </div>
-          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-        </div>
+          <div class="form-group">
+            <label class="form-control-label" for="occupation">Occupation</label>
+            <input type="text" class="form-control" id="occupation">
+          </div>
+          <div class="form-group">
+            <label class="form-control-label" for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -152,18 +158,18 @@
 </div>
       <!-- /Modal -->
       <!--footer-->
-      <div class="container p-2">
-      <div class="row py-3">
-        <div class="col-md-left">
-          <a class="p-2" href="https://www.facebook.com/htrung1303" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
-          <a class="p-2" href="https://m.me/htrung1303" target="_blank"><i class="fab fa-facebook-messenger fa-2x"></i></a>
-          <a class="p-2" href="https://instagram.com/htrung1303" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-          <a class="p-2" href="https://soundcloud.com/thp1303" target="_blank"><i class="fab fa-soundcloud fa-2x"></i></a>
+      <div class="container pt-4">
+        <div class="row py-3">
+          <div class="col-md-left">
+            <a class="p-2" href="https://www.facebook.com/htrung1303" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a class="p-2" href="https://m.me/htrung1303" target="_blank"><i class="fab fa-facebook-messenger fa-2x"></i></a>
+            <a class="p-2" href="https://instagram.com/htrung1303" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a class="p-2" href="https://soundcloud.com/thp1303" target="_blank"><i class="fab fa-soundcloud fa-2x"></i></a>
+          </div>
+          <div class="col-md text-md-right">
+            <small>&copy; Hoang Trung Portfolio 2018</small>
+          </div>
         </div>
-        <div class="col-md text-md-right">
-          <small>&copy; Hoang Trung Portfolio 2018</small>
-        </div>
-      </div>
       </div>
       <!--endfooter-->
 

@@ -147,6 +147,10 @@ header .profile-image:hover {
   border-color: #ff99ff;
 }
 
+.form-control-label{
+  text-align: left;
+}
+
 ul.skills {
   padding: 0;
   text-align: center;
